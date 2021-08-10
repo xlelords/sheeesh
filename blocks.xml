@@ -1,0 +1,104 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_on_connected" id="3/K,2`GH|yFX.hJStd7." x="46" y="115">
+    <statement name="STATEMENTS">
+      <block type="s4d_set_bot_listening" id="BH))F9U5V}W9tw1fD;F`">
+        <value name="listening">
+          <block type="text" id="lo7[0t~`7LCw#hFA[g%e">
+            <field name="TEXT">Welcome To Reaper Wrld :0</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_login" id=")O7+PL3eS1Br}h;?X9N$" x="288" y="163">
+    <value name="TOKEN">
+      <block type="text" id="a7JxIIyK[Yr~TPL^-{W:">
+        <field name="TEXT">ODcyOTk1NjYzNzkxNjg1NjQy.YQx-kQ.xNfbCvYjBewGTUnzlOXzwZ4X-l0</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="Qx+aIDM=_,mj^tl$vGmW" x="288" y="238">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="Cr$f.P2*Nq2Dl}?D!r`(">
+        <value name="IF0">
+          <block type="logic_compare" id="oq-Tf{oSnv,],{N*FSF|">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="pyFMNvR6J#o6Ky/UA~]f"></block>
+            </value>
+            <value name="B">
+              <block type="text" id=";[??XKp36YJf2U}j2_}e">
+                <field name="TEXT">$hello</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="wgo^7yFoMz,K{AaMl6L)">
+            <value name="CONTENT">
+              <block type="text" id="N-4C!JnJCe,s$75i%8Ce">
+                <field name="TEXT">hello sir how may i help u if u need more help put $help</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="sCt{Ba-/O(HvQr::}:0x" x="-46" y="344">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="!R71f]VHlWB16Fm$.%K}">
+        <value name="IF0">
+          <block type="logic_compare" id="dl/7Eb@T#CNUJt?EtEYa">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="oEOg?h(zK7GwZ--kXc46"></block>
+            </value>
+            <value name="B">
+              <block type="text" id=",Vc4RMJdOnP6D[9Ge(Mm">
+                <field name="TEXT">$invite</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="x0+!{R0HHYlzff}d6o[/">
+            <value name="CONTENT">
+              <block type="text" id="KIyy~{X+j45j.{2cO9?f">
+                <field name="TEXT">Our Main Server Invite https://discord.gg/2YCXhQj9</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="T+C4%qW3#3:8tbZyP+?I" x="294" y="456">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="V-}Kso.QJ;XPHVTvf%1+">
+        <value name="IF0">
+          <block type="logic_compare" id="8^,!*ARcSm@eO;r`]f`2">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="p4oaP3Uuui/3d~+5L[vo"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="$fHh6OX.ga5][K)^$vCb">
+                <field name="TEXT">$help</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="W/;{vL!yHi9VpP1Tk1nR">
+            <value name="CONTENT">
+              <block type="text" id="{5]qd9oPug]+$yXxB`(M">
+                <field name="TEXT">$invite $hello $help </field>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
